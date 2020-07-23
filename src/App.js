@@ -1,24 +1,74 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./header";
+import "./App.css";
+import Vichh from "./vichh.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <div className="App">
+        <Header />
+      </div>
+      <div className="form1">
+        <img src={Vichh} alt="vichh" className="form" />
+        <text
+          style={{
+            position: "absolute",
+            top: 150,
+            left: 50,
+            right: 0,
+            bottom: 0,
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: "70px",
+            color: "silver",
+            fontFamily: "Red Rose",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          PerfectSquare
+        </text>
+        <h1 className="text1">About Us</h1>
+        <text className="text1">
+          hjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhs
+          auhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafs
+          fdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdf
+          safsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdus
+          hhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhsauhdushhjfdsfsdfsafsufdhs
+          auhdushhjfdsfsdfsafsufdhsauhdush
+        </text>
+        <h1 className="text1">Our Team</h1>
+      </div>
+      <div className="div1">
+        <h1 className="contact">Contact Us</h1>
+        <label className="label">
+          <input
+            type="text"
+            name="name"
+            className="name"
+            placeholder="  Name"
+          />
+        </label>
+        <div>
+          <label className="label">
+            <input
+              type="text"
+              name="name"
+              className="name"
+              placeholder="  E-mail"
+            />
+          </label>
+        </div>
+        <div>
+          <label className="label2">
+            <input
+              type="text"
+              name="name"
+              className="message"
+              placeholder="  Message"
+            />
+          </label>
+        </div>
+      </div>
     </div>
   );
 }
